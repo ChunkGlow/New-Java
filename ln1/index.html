@@ -1,0 +1,94 @@
+<html>
+
+<head>
+
+
+    <title>TechnoMath</title>
+
+
+
+</head>
+
+<body>
+
+    <script>
+        var a = 30;
+        var b = 90;
+        var c = 90;
+        var d = null;
+        var e; // undefined variable
+        document.write("The Variables A and B are  " + (a == b));
+        document.write("<br>");
+        document.write("Variables B and C are " + (b == c));
+        document.write("<br>");
+        document.write("The Element of D is " + d);
+        document.write("<br>");
+        document.write("The Element of E is " + e);
+
+        var data = "";
+        var i = 0;
+        while (i < 10) {
+
+            data += "<br> The Number is" + i;
+            i++;
+
+        }
+
+        document.getElementById("new").innerHTML = data;
+
+        function myFunction() {
+
+            var greeting;
+            var time = new Date().getHours();
+
+            if (time < 10) {
+
+                greeting = "Good morning";
+
+            }
+
+
+            else if (time < 18) {
+
+                greeting = "Good day";
+
+            }
+
+
+            else {
+                greeting = "Good evening";
+            }
+            document.getElementById("time").innerHTML = "Time Is "
+                + time;
+            document.getElementById("phrase").innerHTML = greeting;
+
+
+        }
+    </script>
+
+
+    <p>A Example of a Mathematical Scripture</p>
+
+    <h4> Variables of A {1,2,3,4,5}</h4>
+    <h4> Variables of B {5,6,7,8,9,0}</h4>
+
+    <p id="new"></p>
+
+    <h1>Next Page at Bottom</h1>
+
+    <p>Click On The Button For Time Info</p>
+
+    <button onclick="myFunction()">Test Button</button>
+
+    <p id="time"></p>
+    <p id="phrase"></p>
+
+
+
+
+
+
+
+</body>
+
+</html>
